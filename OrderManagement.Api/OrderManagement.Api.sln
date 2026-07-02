@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37203.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.Api", "OrderManagement.Api.csproj", "{2C1E8362-B6E6-44D3-BCF0-1580D7C10F19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.Domain", "..\OrderManagement.Domain\OrderManagement.Domain.csproj", "{5C894AE4-3A25-4943-908F-2897DEECD9BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.Application", "..\OrderManagement.Application\OrderManagement.Application.csproj", "{E2ED996E-B513-47B9-9A74-37D46D249FC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C894AE4-3A25-4943-908F-2897DEECD9BA} = {5C894AE4-3A25-4943-908F-2897DEECD9BA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.Infrastructure", "..\OrderManagement.Infrastructure\OrderManagement.Infrastructure.csproj", "{D24D6B73-7FB1-44AE-8ABC-F7692509B24F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C894AE4-3A25-4943-908F-2897DEECD9BA} = {5C894AE4-3A25-4943-908F-2897DEECD9BA}
+		{E2ED996E-B513-47B9-9A74-37D46D249FC0} = {E2ED996E-B513-47B9-9A74-37D46D249FC0}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{85ED62C4-7EA1-4087-95E8-2A6433A95C9F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\01-domain-model.md = ..\..\..\..\Downloads\01-domain-model.md
+		..\..\..\..\Downloads\02-solid.md = ..\..\..\..\Downloads\02-solid.md
+		..\..\..\..\Downloads\03-architecture.md = ..\..\..\..\Downloads\03-architecture.md
+		..\..\..\..\Downloads\04-business-rules.md = ..\..\..\..\Downloads\04-business-rules.md
+		..\..\..\..\Downloads\05-persistence.md = ..\..\..\..\Downloads\05-persistence.md
+		..\..\..\..\Downloads\06-api.md = ..\..\..\..\Downloads\06-api.md
+		..\..\..\..\Downloads\07-decisions.md = ..\..\..\..\Downloads\07-decisions.md
+		..\..\..\..\Downloads\08-future-improvements.md = ..\..\..\..\Downloads\08-future-improvements.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C1E8362-B6E6-44D3-BCF0-1580D7C10F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1E8362-B6E6-44D3-BCF0-1580D7C10F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1E8362-B6E6-44D3-BCF0-1580D7C10F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1E8362-B6E6-44D3-BCF0-1580D7C10F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C894AE4-3A25-4943-908F-2897DEECD9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C894AE4-3A25-4943-908F-2897DEECD9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C894AE4-3A25-4943-908F-2897DEECD9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C894AE4-3A25-4943-908F-2897DEECD9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2ED996E-B513-47B9-9A74-37D46D249FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2ED996E-B513-47B9-9A74-37D46D249FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2ED996E-B513-47B9-9A74-37D46D249FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2ED996E-B513-47B9-9A74-37D46D249FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24D6B73-7FB1-44AE-8ABC-F7692509B24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24D6B73-7FB1-44AE-8ABC-F7692509B24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24D6B73-7FB1-44AE-8ABC-F7692509B24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24D6B73-7FB1-44AE-8ABC-F7692509B24F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C1E8362-B6E6-44D3-BCF0-1580D7C10F19} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5C894AE4-3A25-4943-908F-2897DEECD9BA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E2ED996E-B513-47B9-9A74-37D46D249FC0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D24D6B73-7FB1-44AE-8ABC-F7692509B24F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D323261F-18B8-4D1C-8BCA-011A85235DB6}
+	EndGlobalSection
+EndGlobal
